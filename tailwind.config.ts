@@ -12,6 +12,7 @@ export default {
         border: 'var(--border)',
         background: 'var(--background)',
         bg2: 'var(--bg2)',
+        glass: 'var(--glass)',
       }
     },
   },

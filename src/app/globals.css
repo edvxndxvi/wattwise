@@ -10,6 +10,7 @@
   --border: #363636;
   --background: #131512;
   --bg2: #0D0E0D;
+  --glass: rgba(255, 255, 255, 0.02);
 }
 
 html[light]{
@@ -20,4 +21,14 @@ html[light]{
   --border: #DDDDDD; 
   --background: #F9F9F9; 
   --bg2: #FFFFFF; 
+  --glass: rgba(255, 255, 255, 0.002);
+}
+
+html,
+body{
+  @apply bg-background text-text h-screen;
+}
+
+.login-bg{
+  background-image: url('../../public/assets/images/loginBackground.jpg');
 }
