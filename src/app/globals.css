@@ -4,10 +4,20 @@
 
 :root{
   --primary: #AEF78E;
-  --p2: #111111;
+  --p2: #081C15;
   --text: #FFFFFF;
   --cinza: #808080;
   --border: #363636;
   --background: #131512;
   --bg2: #0D0E0D;
+}
+
+html[light]{
+  --primary: #4CAF50; 
+  --p2: #FFFFFF; 
+  --text: #000000; 
+  --cinza: #B0B0B0;
+  --border: #DDDDDD; 
+  --background: #F9F9F9; 
+  --bg2: #FFFFFF; 
 }
