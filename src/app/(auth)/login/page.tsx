@@ -1,8 +1,11 @@
 'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import logo from '../../../../public/assets/svg/logo.svg';
 import googleIcon from '../../../../public/assets/svg/google-icon.svg';
 import appleIcon from '../../../../public/assets/svg/apple-icon.svg';
 import { SocialLoginButton } from '@/components/SocialLoginButton';
-import Link from 'next/link';
 
 export default function Login() {
   return (
@@ -11,10 +14,11 @@ export default function Login() {
         <div className="py-16 px-4 max-w-[500px] mx-auto">
           <form className="flex flex-col px-8 py-16 bg-glass backdrop-blur-3xl rounded-2xl border-solid border-[1px] border-[#ffffff10]">
             <div className="pb-16">
+              <Image src={logo} alt="Logo" className='place-self-center mb-3'/>
               <p className="text-center font-medium text-3xl">WattWise</p>
             </div>
             <div className="flex flex-col gap-6">
-              <input type="text" placeholder="Email" className="bg-[#181918] text-base px-6 py-4 rounded-2xl outline-none"/>
+              <input type="email" placeholder="Email" className="bg-[#181918] text-base px-6 py-4 rounded-2xl outline-none"/>
               <input type="password" placeholder="Senha" className="bg-[#181918] text-base px-6 py-4 rounded-2xl outline-none"/>
             </div>
             <a href="" className="mt-3 mb-6 text-right text-[#D9D9D9] hover:text-white transition-colors">Esqueceu a senha?</a>
@@ -26,7 +30,7 @@ export default function Login() {
               <SocialLoginButton iconSrc={googleIcon} title="Google" />
               <SocialLoginButton iconSrc={appleIcon} title="Apple" />
             </div>
-            <p className='text-[#D9D9D9]'>Não possui uma conta? <a href="#" className='font-bold hover:text-white'>Criar uma agora.</a></p>
+            <p className='text-[#D9D9D9]'>Não possui uma conta? <a href="/signUp" className='font-bold hover:text-white'>Criar uma agora.</a></p>
           </form>
         </div>
       </section>

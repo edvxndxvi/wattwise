@@ -12,7 +12,7 @@ export default function HomePage() {
   //     router.push('/auth/login');
   //   }
   // }, [isAuthenticated, router]);
-  redirect('/auth/login');
+  redirect('/login');
 
 
   return null; 

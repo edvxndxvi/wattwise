@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
+import logo from '../../public/assets/svg/logo.svg';
 import { VisaoGeralIcon } from './IconComponents/VisaoGeralIcon';
 import { ConsumoIcon } from './IconComponents/ConsumoIcon';
 import { DispositivoIcon } from './IconComponents/DispositivoIcon';
@@ -15,7 +17,7 @@ export const SideBar = () => {
     return (
         <aside className='py-6 px-2 lg:px-8 bg-bg2 h-screen relative'>
             <div className='flex items-center gap-4 mb-6 before:absolute before:content[""] before:w-[1px] before:h-[60px] before:bg-gradient-to-b before:from-bg2 before:via-background before:to-bg2 before:right-0 before:z-10'>
-                <div className='w-10 h-10 bg-primary rounded-lg'></div>
+                <Image src={logo} alt="Logo" className='w-10'/>
                 <span className='text-2xl hidden lg:block'>WattWise</span>
             </div>
             <div className='w-full h-[1px] bg-gradient-to-r from-bg2 via-background to-bg2'></div>
