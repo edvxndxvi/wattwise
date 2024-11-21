@@ -6,12 +6,12 @@ const data = [
   {
     name: 'Jul',
     current: 160,
-    sustainable: 190,
+    sustainable: 140,
   },
   {
     name: 'Ago',
     current: 300,
-    sustainable: 250,
+    sustainable: 230,
   },
   {
     name: 'Set',
@@ -21,7 +21,7 @@ const data = [
   {
     name: 'Out',
     current: 150,
-    sustainable: 170,
+    sustainable: 270,
   },
   {
     name: 'Nov',

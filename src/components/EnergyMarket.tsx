@@ -33,17 +33,17 @@ export const EnergyMarket = () => {
             {marketItems.map((i, index) =>(
                <div className="flex justify-between" key={index}>
                     <div className='flex gap-2'>
-                        <div className='w-[46px] h-[46px] bg-slate-500 rounded-lg items-center'></div>
+                        <div className='w-[46px] h-[46px] bg-border rounded-lg items-center'></div>
                         {/* <Image src={i.image} alt={i.name}/> */}
                         <div>
-                            <p>{i.name}</p>
+                            <p className="text-sm sm:text-base">{i.name}</p>
                             <span className={`text-sm p-[2px] rounded-[4px] ${i.change < 0 ? 'text-[#C83529] bg-[#572925]' : 'text-[#34A853] bg-[#1B4332]'}`}>   {i.change > 0 ? `+${i.change}%` : `${i.change}%`}
                             </span>
                         </div>
                     </div>
-                    <div>
-                        <p className='text-right'>R$ {i.price}</p>
-                        <span className='text-sm text-cinza'>Preço por kWh</span>
+                    <div className="flex flex-col text-right">
+                        <p className='m:text-base'>R$ {i.price}</p>
+                        <span className='text-xs sm:text-sm text-cinza '>Preço por kWh</span>
                     </div>
                </div> 
             ))}
