@@ -3,9 +3,9 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
-    { name: 'Geladeira Philco', value: 90 },
-    { name: 'Samsung Smart TV 45”', value: 44 },
-    { name: 'Outros', value: 250 },
+    { name: 'Ar condicionado', value: 360 },
+    { name: 'Computadores', value: 480 },
+    { name: 'Outros', value: 1650 },
 ];
 const COLORS = ['#AEF78E', '#12AB65', '#215840'];
 
@@ -19,7 +19,7 @@ export default class DeviceChart extends PureComponent{
                 <div className='flex flex-col md:flex-row w-full h-full justify-between gap-4'>
                     <div className='w-1/2 h-[150px] md:h-[200px] lg:h-[250px] self-center md:self-start'>
                         <ResponsiveContainer width="100%" height="100%">
-                            <PieChart //onMouseEnter={this.onPieEnter}
+                            <PieChart
                             >
                                 <Pie
                                     data={data}

@@ -5,7 +5,7 @@ import ExpenseChart from "@/components/ExpenseChat";
 
 export default function VisaoGeral() {
     return (
-        <div className="p-8 flex flex-col gap-16 ">
+        <div className="p-8 flex flex-col gap-8 ">
             <div className="flex gap-8 flex-col-reverse lg:flex-row">
                 <div className='w-full lg:w-2/3 h-[400px]'>
                     <EnergyConsumedChart/>
