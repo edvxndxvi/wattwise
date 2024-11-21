@@ -1,27 +1,32 @@
-// import Image from 'next/image';
+import Image from 'next/image';
+
+import neoEnergia from '../../public/assets/images/distributorLogos/neoenergia-logo.jpg';
+import enel from '../../public/assets/images/distributorLogos/enel-logo.jpg';
+import raisenPower from '../../public/assets/images/distributorLogos/raisenpower-logo.jpg';
+import engie from '../../public/assets/images/distributorLogos/engie-logo.jpg';
 
 const marketItems = [
     {
         name: "Neoenergia",
-        //image: '',
+        image: neoEnergia,
         price: 0.85,
         change: -0.05,
     },
     {
         name: "Enel",
-        //image: '',
+        image: enel,
         price: 0.95,
         change: 0.05,
     },
     {
         name: "RaisenPower",
-        //image: '',
+        image: raisenPower,
         price: 1.03,
         change: 0.10,
     },
     {
         name: "ENGIE Brasil",
-        //image: '',
+        image: engie,
         price: 0.70,
         change: -0.10,
     },
@@ -33,8 +38,7 @@ export const EnergyMarket = () => {
             {marketItems.map((i, index) =>(
                <div className="flex justify-between" key={index}>
                     <div className='flex gap-2'>
-                        <div className='w-[46px] h-[46px] bg-border rounded-lg items-center'></div>
-                        {/* <Image src={i.image} alt={i.name}/> */}
+                        <Image src={i.image} alt={i.name}  width={46} height={46} className='rounded-lg'/>
                         <div>
                             <p className="text-sm sm:text-base">{i.name}</p>
                             <span className={`text-sm p-[2px] rounded-[4px] ${i.change < 0 ? 'text-[#C83529] bg-[#572925]' : 'text-[#34A853] bg-[#1B4332]'}`}>   {i.change > 0 ? `+${i.change}%` : `${i.change}%`}
