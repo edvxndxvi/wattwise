@@ -1,6 +1,7 @@
 import DeviceChart from "@/components/DeviceChart";
 import EnergyConsumedChart from "@/components/EnergyConsumedChart";
 import { EnergyMarket } from "@/components/EnergyMarket";
+import ExpenseChart from "@/components/ExpenseChat";
 
 export default function VisaoGeral() {
     return (
@@ -21,7 +22,7 @@ export default function VisaoGeral() {
                     <DeviceChart/>
                 </div>
                 <div className='w-full xl:w-1/2 h-full xl:max-h-[350px] '>
-                    <DeviceChart/>
+                    <ExpenseChart/>
                 </div>
             </div>
         </div>
