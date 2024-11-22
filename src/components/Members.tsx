@@ -22,7 +22,7 @@ const members = [
         linkedin: "https://www.linkedin.com/in/rafaelromanini/"
     },
     {
-        name: "Rafel Bezerra",
+        name: "Rafael Bezerra",
         image: rafaBezerra,
         rm: 557888,
         github: "https://github.com/Rafazls",
