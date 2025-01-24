@@ -9,8 +9,10 @@
 - NextJS 
 - TypeScript
 - Tailwind CSS
+- React to PDF
+- Recharts
 
-## 🚀 Instalando <autocare>
+## 🚀 Instalando <wattwise>
 
 Para instalar o <wattwise>, siga estas etapas:
 
